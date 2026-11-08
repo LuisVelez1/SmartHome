@@ -20,13 +20,6 @@ public abstract class Thermostat implements Device {
         Ison = false;
         System.out.println("The thermostat is off");
     }
-
-    @Override
-    public String getStatus() {
-       if (Ison == true){
-           return "The thermostat" + Temperature + "C°";
-       } else {
-          return "OFF";
        }
     }
 }
