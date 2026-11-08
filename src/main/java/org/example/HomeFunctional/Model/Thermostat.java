@@ -1,4 +1,4 @@
-package org.example.HomeFunctional;
+package org.example.HomeFunctional.Model;
 
 public abstract class Thermostat implements Device {
     private boolean Ison = false;
@@ -21,5 +21,4 @@ public abstract class Thermostat implements Device {
         System.out.println("The thermostat is off");
     }
        }
-    }
-}
+

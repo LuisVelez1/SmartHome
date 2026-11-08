@@ -1,4 +1,4 @@
-package org.example.HomeFunctional;
+package org.example.HomeFunctional.Observer;
 
 public class NotificationCenter implements Observer {
     @Override
