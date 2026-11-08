@@ -1,24 +1,30 @@
 package org.example.HomeFunctional.Model;
 
-public abstract class Thermostat implements Device {
-    private boolean Ison = false;
-    private int Temperature = 20;
+import org.example.HomeFunctional.State.HomeState;
+import org.example.HomeFunctional.State.ThermostatOffState;
+import org.example.HomeFunctional.State.ThermostatOnState;
+
+public class Thermostat implements Device {
+    private HomeState currentState = new ThermostatOffState();
+    private int temperature = 20;
 
     @Override
     public String getName() {
         return "The thermostat";
     }
 
+    public void setState(HomeState state) {
+        this.currentState = state;
+    }
+
     @Override
     public void turnOn() {
-        Ison = true;
-        System.out.println("The thermostat is on");
+        currentState.PressTurnOn(this);
     }
 
     @Override
     public void turnOff() {
-        Ison = false;
-        System.out.println("The thermostat is off");
+        currentState.PressTurnOff(this);
     }
-       }
 
+}
