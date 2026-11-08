@@ -1,6 +1,6 @@
-package org.example.HomeFunctional;
+package org.example.HomeFunctional.Model;
 
-public abstract class Light implements Device{
+public class Light implements Device {
     private boolean isOn = false;
     @Override
     public String getName() {

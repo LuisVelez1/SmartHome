@@ -1,4 +1,4 @@
-package org.example.HomeFunctional;
+package org.example.HomeFunctional.Observer;
 
 import java.util.ArrayList;
 import java.util.List;
