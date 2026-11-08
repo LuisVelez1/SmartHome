@@ -1,30 +1,27 @@
 package org.example.HomeFunctional.Model;
 
+import org.example.HomeFunctional.State.HomeState;
+import org.example.HomeFunctional.State.LightOffState;
+import org.example.HomeFunctional.State.LightOnState;
+
 public class Light implements Device {
-    private boolean isOn = false;
+    private HomeState currentState = new LightOffState();
     @Override
     public String getName() {
         return "Light";
     }
+    public void setState(HomeState state) {
+        this.currentState = state;
+    }
 
     @Override
     public void turnOn() {
-        isOn = true;
-        System.out.println("The smart light is on");
+        currentState.PressTurnOn(this);
     }
 
     @Override
     public void turnOff() {
-        isOn = false;
-        System.out.println("The smart light is off");
+        currentState.PressTurnOff(this);
     }
+}
 
-    @Override
-    public String getStatus() {
-      if ( isOn == true ){
-     return "ON";
-    } else {
-      return "OFF";
-    }
-}
-}
