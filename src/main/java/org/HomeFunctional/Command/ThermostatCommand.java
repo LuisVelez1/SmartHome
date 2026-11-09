@@ -1,6 +1,6 @@
-package org.example.HomeFunctional.Command;
+package org.HomeFunctional.Command;
 
-import org.example.HomeFunctional.Model.Thermostat;
+import org.HomeFunctional.Model.Thermostat;
 
 public class ThermostatCommand implements Command {
     private final Thermostat turnOnThermosthat;

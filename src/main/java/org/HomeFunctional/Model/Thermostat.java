@@ -1,12 +1,15 @@
-package org.example.HomeFunctional.Model;
+package org.HomeFunctional.Model;
 
-import org.example.HomeFunctional.State.HomeState;
-import org.example.HomeFunctional.State.ThermostatOffState;
-import org.example.HomeFunctional.State.ThermostatOnState;
+import org.HomeFunctional.State.HomeState;
+import org.HomeFunctional.State.ThermostatOffState;
+import org.HomeFunctional.Strategy.TemperatureStrategy;
 
 public class Thermostat implements Device {
     private HomeState currentState = new ThermostatOffState();
-    private int temperature = 20;
+    private int temperature = 21;
+    public void changeTemperatureStrategy(TemperatureStrategy strategy) {
+        this.temperature = strategy.calculateTemperature(this.temperature);
+    }
 
     @Override
     public String getName() {

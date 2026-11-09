@@ -1,6 +1,6 @@
-package org.example.HomeFunctional.Command;
+package org.HomeFunctional.Command;
 
-import org.example.HomeFunctional.Model.Light;
+import org.HomeFunctional.Model.Light;
 
 public class LightCommand implements Command {
     private final Light turnOnLight;

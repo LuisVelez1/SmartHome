@@ -1,4 +1,4 @@
-package org.example.HomeFunctional.Command;
+package org.HomeFunctional.Command;
 
 public class RemoteControl {
     private Command command;

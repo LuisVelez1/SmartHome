@@ -1,7 +1,7 @@
-package org.example.HomeFunctional.State;
+package org.HomeFunctional.State;
 
-import org.example.HomeFunctional.Model.Device;
-import org.example.HomeFunctional.Model.Thermostat;
+import org.HomeFunctional.Model.Device;
+import org.HomeFunctional.Model.Thermostat;
 
 public class ThermostatOffState implements HomeState {
     @Override

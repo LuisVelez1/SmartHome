@@ -1,4 +1,4 @@
-package org.example.HomeFunctional.Model;
+package org.HomeFunctional.Model;
 
 public interface Device {
     String getName();

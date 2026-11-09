@@ -1,4 +1,4 @@
-package org.example.HomeFunctional.Observer;
+package org.HomeFunctional.Observer;
 
 public interface Observer {
     void update (String message);
