@@ -1,5 +1,5 @@
-package org.example.HomeFunctional.State;
-import org.example.HomeFunctional.Model.Device;
+package org.HomeFunctional.State;
+import org.HomeFunctional.Model.Device;
 
 public interface HomeState{
     void PressTurnOn(Device device);

@@ -1,8 +1,7 @@
-package org.example.HomeFunctional.Model;
+package org.HomeFunctional.Model;
 
-import org.example.HomeFunctional.State.HomeState;
-import org.example.HomeFunctional.State.LightOffState;
-import org.example.HomeFunctional.State.LightOnState;
+import org.HomeFunctional.State.HomeState;
+import org.HomeFunctional.State.LightOffState;
 
 public class Light implements Device {
     private HomeState currentState = new LightOffState();

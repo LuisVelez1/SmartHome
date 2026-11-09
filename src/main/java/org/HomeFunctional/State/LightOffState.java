@@ -1,7 +1,7 @@
-package org.example.HomeFunctional.State;
+package org.HomeFunctional.State;
 
-import org.example.HomeFunctional.Model.Device;
-import org.example.HomeFunctional.Model.Light;
+import org.HomeFunctional.Model.Device;
+import org.HomeFunctional.Model.Light;
 
 public class LightOffState implements HomeState {
     @Override
