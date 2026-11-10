@@ -12,6 +12,7 @@ public class Light implements Device {
     public void setState(HomeState state) {
         this.currentState = state;
     }
+    public boolean isOn() { return currentState instanceof org.HomeFunctional.State.LightOnState; }
 
     @Override
     public void turnOn() {

@@ -7,7 +7,7 @@ import org.HomeFunctional.Model.Thermostat;
 public class DeviceFactory {
     public static Device createDevice(String type) {
         if (type == null) {
-            return null;
+            throw new IllegalArgumentException("Device type cannot be null");
         }
         if (type.equalsIgnoreCase("LIGHT")) {
             return new Light();
