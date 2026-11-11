@@ -1,4 +1,3 @@
-# SmartHome · Parcial 3
 
 **Aplicación de e**scritorio de gestión y automatización de un hogar inteligente con Java 21, JavaFX y FXML. Simula luces, termostato, sensor de movimiento, modo ausente y control de grupos. La pantalla presenta estados y un registro de eventos; no controla hardware real.
 
